@@ -1,0 +1,31 @@
+{
+  "fast-brain-unet": {
+    "dice": 0.8122549947382123,
+    "dice_ci95": [
+      0.7962884257617462,
+      0.8281662917292413
+    ],
+    "dice_tumour_only": 0.8122549947382123,
+    "iou": 0.7313803672710903,
+    "hd95_px": 3.7436083290515905,
+    "false_positive_rate_on_empty_slices": null,
+    "n_slices": 860,
+    "n_tumour_slices": 860,
+    "split_evaluated": "test",
+    "tta": "hflip",
+    "postprocessing": "largest-components + hole filling",
+    "resolution": [
+      224,
+      224
+    ],
+    "weights": "fast_brain_unet.pt",
+    "timestamp": "2026-11-17 13:04:06",
+    "data_split": {
+      "group_aware": false,
+      "n_train": 3343,
+      "n_val": 590,
+      "n_test": 860
+    },
+    "provenance": "trained here; checkpoint selected on validation, test evaluated once"
+  }
+}

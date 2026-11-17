@@ -1,0 +1,36 @@
+{
+  "backbone": "efficientnet_b0",
+  "pretrained_init": true,
+  "epochs_requested": 30,
+  "best_epoch": 23,
+  "best_val_acc": 0.992,
+  "val_macro_f1": 0.9921708155343437,
+  "test_acc": 0.991,
+  "test_macro_f1": 0.9917144291918311,
+  "test_ece_raw": 0.0737387828528881,
+  "test_ece_calibrated": 0.0044032326936721345,
+  "temperature": 0.4904971718788147,
+  "label_smoothing": 0.1,
+  "class_weights": true,
+  "split": {
+    "val_fraction": 0.15,
+    "seed": 42,
+    "group_aware": false,
+    "n_train": 4250,
+    "n_val": 750,
+    "n_test": 1000
+  },
+  "note": "Checkpoint chosen on validation split; test split evaluated once after training.",
+  "classes": [
+    "glioma",
+    "meningioma",
+    "no_tumor",
+    "pituitary"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "total_training_time_sec": 522.93,
+  "timestamp": "2026-11-17 12:15:34"
+}
